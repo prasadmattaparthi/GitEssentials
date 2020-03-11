@@ -1,0 +1,106 @@
+GitHUB bare repo (git init --bare)
+
+https://github.com/HemaGRepo/EssenD1.git
+
+Non Bare Repo (git init)
+
+https://github.com/HemaGRepo/SourceRepo1.git
+
+git commit
+
+git branch 
+
+git branch Dev
+
+git checkout Dev
+
+git merge -> Compare and pull
+
+git rebase -> Compare and pull
+
+Local Git repo
+---------------
+git clone https://github.com/HemaGRepo/SourceRepo1.git
+
+git push
+
+git push from Local to Bare repo in GitHUB
+
+Local repo - D:/repo1306
+Remote repo -  https://github.com/HemaGRepo/EssenD1.git
+
+# Create a name origin for your remote GitHub URL
+git remote add origin https://github.com/HemaGRepo/EssenD1.git
+git push origin master
+
+Demo:
+----
+Create a GitHUB bare repo - https://github.com/HemaGRepo/CGBareRepo.git
+
+Create two Local repos CG1 and CG2 
+
+CG1
+|
+| PUSH
+|
+V
+https://github.com/HemaGRepo/CGBareRepo.git
+|
+| PULL
+|
+V
+CG2
+
+
+Issue Tab
+-----------
+
+Create a new issue and every issue has a issue number
+
+#2 - HelloWorld.java ,#3- App.java
+
+To close a issue in GitHub use any of these keywords
+
+close #3
+closes
+closed
+fix
+fixes #2
+fixed
+resolve
+resolves
+resolved #4
+
+------------Demo Tools-----------
+
+Developer - Eclipse IDE - Every IDE has GIT and GITHub integartion
+
+Source Code
+|
+|
+|
+V
+Commit Local Git Repo (D:\LRepo1)
+|
+|
+|
+V
+Push the code to GitHub (https://github.com/HemaGRepo/ForBuild.git)
+|
+|
+|
+V
+Whenever the code is pushed/commited to remote repo,
+(https://github.com/HemaGRepo/ForBuild.git)
+Continuous Inte Server will clone the code from the repo and
+Execute it
+
+
+
+
+
+
+
+
+
+

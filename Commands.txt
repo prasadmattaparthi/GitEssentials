@@ -1,0 +1,85 @@
+Creating a repo:
+
+Non bare repo
+1) git init
+
+2) git status - Tell the status of files in the repo
+
+If a file has to be commited - file should be moved to a virtual/temp/buffer area called the staging area
+
+3) git add f1.txt f2.txt
+git add f1.txt
+git add .
+
+Commit will commit the files which are in the staging area
+
+4) git commit -m "V1.0"  #### id 465656d - f1.txt
+git commit -m "V2.0" #### id 9b20c77 - f2.txt new file with only 1 line
+git commit -m "v3.0" #### id aafd226 - Modified the file f2.txt
+git commit -m "v4.0" #### id decc540 - Created App.java
+
+5) git log
+
+After the V3.0 commit I feel that the content is incorrect and I want to move back or revert to V2.0
+
+6) git tag "T2.0" 9b20c77
+
+7) git checkout "T2.0" 
+
+  git checkout 9b20c77  
+Restoring the files which were in V2.0
+
+8) git revert decc540
+
+Rollback the commit
+
+Creating a bare repo:
+----------------------
+D:\Integrate
+git init --bare
+
+D:\repo1306> git push D:\Integrate master
+
+
+repo1306
+|
+|
+| Push
+|
+V
+Bare repo D:\Integrate
+|
+|
+| Pull
+|
+V
+copyFolder
+
+git pull D:\Integrate
+
+Pull and Push happen on branch
+-----------------------------------
+
+Branch - a line of dev in GIT
+
+1) git branch - show all the branch
+2) git branch Dev - a new branch Dev is created
+3) git checkout Dev - Move to the branch Dev
+
+4) git merge Test (Current branch is merged with Test branch)
+
+5) git clone
+ - Creating a repository from an already existing repos
+
+D:\JuneClone> git clone D:/bDemo1
+
+***A new repo is create in 
+D:\JuneClone which is a clone of bdemo1
+
+
+
+
+
+
+
+

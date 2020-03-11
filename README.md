@@ -1,2 +1,2 @@
-# GitEssentials
-no needed
+# GitHubEssentials
+To share GITHub content
